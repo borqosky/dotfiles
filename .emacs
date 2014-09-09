@@ -1,3 +1,4 @@
+
 ;; Add package sources
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
@@ -27,3 +28,8 @@
 (require 'autopair)
 (autopair-global-mode) ;; enable autopair in all buffers
 
+;; Set Linum-Mode on
+(global-linum-mode t)
+ 
+;; Linum-Mode and add space after the number
+(setq linum-format "%d ")
