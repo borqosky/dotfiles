@@ -33,3 +33,5 @@
  
 ;; Linum-Mode and add space after the number
 (setq linum-format "%d ")
+
+(global-hl-line-mode 1)
