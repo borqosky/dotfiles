@@ -36,3 +36,7 @@
 
 (require 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+
