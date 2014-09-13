@@ -23,8 +23,6 @@
 
 (add-hook 'python-mode-hook 'jedi:setup)
 
-(add-hook 'after-init-hook #'global-flycheck-mode)
-
 (require 'autopair)
 (autopair-global-mode) ;; enable autopair in all buffers
 
