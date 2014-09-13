@@ -33,3 +33,6 @@
 (setq linum-format "%d ")
 
 (global-hl-line-mode 1)
+
+(require 'flycheck)
+(add-hook 'after-init-hook #'global-flycheck-mode)
