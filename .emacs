@@ -32,7 +32,7 @@
 ;; Linum-Mode and add space after the number
 (setq linum-format "%d ")
 
-(global-hl-line-mode 1)
+(global-hl-line-mode 0)
 
 (require 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
