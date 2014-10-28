@@ -118,3 +118,8 @@ export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/dist-packages
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+source ~/dotfiles/git-completion.bash
+source ~/dotfiles/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1 
+export PS1="\[\033[01;34m\]\W\$(__git_ps1)$ \[\033[00m\]"
