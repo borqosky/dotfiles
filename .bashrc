@@ -123,3 +123,5 @@ source ~/dotfiles/git-completion.bash
 source ~/dotfiles/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1 
 export PS1="\[\033[01;34m\]\W\$(__git_ps1)$ \[\033[00m\]"
+
+alias emacs="emacs -nw" >> ~/.bashrc
