@@ -25,8 +25,7 @@
 
 (add-hook 'python-mode-hook 'jedi:setup)
 
-(require 'autopair)
-(autopair-global-mode) ;; enable autopair in all buffers
+(electric-pair-mode +1)
 
 ;; Set Linum-Mode on
 (global-linum-mode t)
