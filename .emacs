@@ -9,6 +9,16 @@
 
 (package-refresh-contents)
 
+(defun install-if-needed (package)
+  (unless (package-installed-p package)
+    (package-install package)))
+
+;; make more packages available with the package installer
+(setq to-install
+      '(jedi autopair flycheck))
+
+(mapc 'install-if-needed to-install)
+
 ;; Save backup files in a dedicated directory
 (setq backup-directory-alist '(("." . "~/.saves")))
 
