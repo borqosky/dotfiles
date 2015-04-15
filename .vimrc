@@ -9,5 +9,7 @@ set autoindent
 set expandtab
 set shiftwidth=4
 
+set number
+
 # enable all Python syntax highlighting features
 let python_highlight_all = 1
