@@ -1,15 +1,8 @@
-# enable syntax highlighting
-syntax on
 
-# the next 4 lines set tabs to have 4 spaces, autoindent when already
-# working with indented lines, expand tabs key presses to spaces and
-# move lines 4 spaces each time the >> or << commands are used
-set ts=4
-set autoindent
-set expandtab
-set shiftwidth=4
-
-set number
-
-# enable all Python syntax highlighting features
-let python_highlight_all = 1
+set backspace=2         " backspace in insert mode works like normal editor
+syntax on               " syntax highlighting
+filetype indent on      " activates indenting for files
+set autoindent          " auto indenting
+set number              " line numbers
+colorscheme desert      " colorscheme desert
+set nobackup            " get rid of anoying ~file
